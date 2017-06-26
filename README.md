@@ -9,9 +9,18 @@ MEAN stack course final project.
   - Routes
   - flightDetails
 
-#### database exported by
+#### Database operation
+- collections exported using command
 ```
 mongoexport /db:myFlightsDB /collection:Carriers /out:Carriers.json
 mongoexport /db:myFlightsDB /collection:Routes /out:Routes.json
 mongoexport /db:myFlightsDB /collection:flightDetails /out:flightDetails.json
+```
+And stored under /server/myFlightsDB.
+
+- database importing before running code
+```
+mongoimport /db:myFlightsDB /collection:Carriers /file:Carriers.json
+mongoimport /db:myFlightsDB /collection:Routes /file:Routes.json
+mongoimport /db:myFlightsDB /collection:flightDetails /file:flightDetails.json
 ```

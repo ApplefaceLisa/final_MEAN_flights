@@ -5,45 +5,15 @@ let express = require("express");
 let mongoose = require("mongoose");
 let bodyParser = require("body-parser");
 let jsonParser = bodyParser.json();
-//var handlerModule = require('./handlers/handlerModule');
 let cors = require("cors");
+/*
 let path = require("path"),
     async = require('async');
     fs = require('fs');
-/*
-let carrierSchema = require('./db/Carriers');
-let carrier = mongoose.model('Carriers', carrierSchema);
-let route = require('./db/Routes');
-let flight = require('./db/Flights');
 */
-let Schema = mongoose.Schema;
-let carrierSchema = new Schema({
-    carrierName : String
-}, { collection: 'Carriers' });
-let carriers = mongoose.model('carriers', carrierSchema);
-
-let routeSchema = new Schema({
-    carrier : String,
-    routes : [{name: String}]
-}, { collection : 'Routes' });
-let routes = mongoose.model('routes', routeSchema);
-
-let detailsSchema = new Schema({
-    carrier : String,
-    route : String,
-    details : [{
-        "ident": String,
-        "timestamp": String,
-        "longitude": String,
-        "latitude": String,
-        "groundspeed": String,
-        "altitude": String,
-        "updateType": String,
-        "heading": String,
-        "arrivalTime": String
-    }]
-}, { collection: "flightDetails" });
-let flightDetails = mongoose.model('flightDetails', detailsSchema);
+let carriers = require('./db/Carriers');
+let routes = require('./db/Routes');
+let flightDetails = require('./db/Flights');
 
 let app = express();
 app.use(jsonParser);

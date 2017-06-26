@@ -2,9 +2,10 @@
  * Created by Yajing Li on 6/25/2017.
  */
 let mongoose = require("mongoose");
-let carrier = mongoose.model('Carriers' ,{
+let Schema = mongoose.Schema;
+let carrierSchema = new Schema({
     carrierName : String
-});
+}, { collection: 'Carriers' });
+let carriers = mongoose.model('carriers', carrierSchema);
 
-module.exports = new carrier;
-module.exports.carrierSchema = carrierSchema;
+module.exports = carriers;

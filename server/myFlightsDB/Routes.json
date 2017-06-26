@@ -1,0 +1,4 @@
+{"_id":{"$oid":"59505a63072ec0fb2933800d"},"carrier":"BritishAirways","routes":[{"name":"SFO-AMSTERDAM"},{"name":"SFO-DELHI"},{"name":"SFO-PARIS"},{"name":"SFO-TOKYO"}]}
+{"_id":{"$oid":"59505b1a072ec0fb2933800e"},"carrier":"DeltaAirlines","routes":[{"name":"OAK-AMS"},{"name":"OAK-KAR"},{"name":"OAK-MUN"},{"name":"OAK-TOK"}]}
+{"_id":{"$oid":"59505baf9c1911cbbb930c03"},"carrier":"SouthWest","routes":[{"name":"SFO-AMSTERDAM"},{"name":"SFO-DELHI"},{"name":"SFO-PARIS"},{"name":"SFO-TOKYO"}]}
+{"_id":{"$oid":"59505bf69c1911cbbb930c04"},"carrier":"VirginAtlantic","routes":[{"name":"SFO-AMSTERDAM"},{"name":"SFO-DELHI"},{"name":"SFO-PARIS"},{"name":"SFO-TOKYO"}]}

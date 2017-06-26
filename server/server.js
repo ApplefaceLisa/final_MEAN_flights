@@ -80,9 +80,7 @@ app.get('/flights/carriers/:carrierName', function(req, res, next) {
 app.get('/flights/carriers/:carrierName/:flightName', function(req, res, next) {
     let carrier_name = req.params.carrierName;
     let flight_name = req.params.flightName;
-    flightDetails.find({"carrier" : carrier_name, "route":flight_name})
-        .limit(20)
-        .exec(function(err, data) {
+    flightDetails.find({"carrier" : carrier_name, "route":flight_name}, function(err, data) {
             if (err) {
                 res.json(err).status(500);
             } else {
@@ -91,6 +89,6 @@ app.get('/flights/carriers/:carrierName/:flightName', function(req, res, next) {
         });
 });
 
-    app.listen(3000, function() {
+app.listen(3000, function() {
     console.log("Server is running...")
 });

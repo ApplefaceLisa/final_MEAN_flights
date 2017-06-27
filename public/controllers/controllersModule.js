@@ -28,6 +28,15 @@ angular.module('controllersModule', ['servicesModule'])
             }
         );
     }).controller('flightDetailsCtrl', function($scope, dataManagement, $routeParams) {
+        $scope.pageSize_options = [
+            {name: "5", value: 5},
+            {name: "10", value: 10},
+            {name: "15", value: 15},
+            {name: "20", value: 20}
+        ];
+        $scope.currentPage = 0;
+        $scope.pageSize = $scope.pageSize_options[1].value;
+
         let getDataPromise = dataManagement.getFlightDetails(
                                     $routeParams.carrierName,
                                     $routeParams.flightName);
@@ -35,14 +44,22 @@ angular.module('controllersModule', ['servicesModule'])
         getDataPromise.then(
             function (data) {
                 let details = data.data[0];
-                //console.log(details);
                 $scope.carrierName = details.carrier;
                 $scope.flightName = details.route;
                 $scope.flightDtls = details.details;
+                $scope.dataLen = $scope.flightDtls.length;
+                $scope.numberOfPages = function(){
+                    return Math.ceil($scope.dataLen/$scope.pageSize);
+                };
             },
             function (data, status) {
                 $scope.errorMessage = status;
             }
         );
+    }).filter('startFrom', function() {
+        return function(input, start) {
+            start = +start; //parse to int
+            return input.slice(start);
+        }
     });
 

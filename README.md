@@ -40,9 +40,11 @@ mongodump /db:myFlightsDB /out:db_dumped
 ```
 
 - database restoring before running code
-```
-mongorestore /db:myFlightsDB /dir:db_dumped\myFlightsDB
-```
+  - `cmd1 > mongod --dbpath \Users\Public\data\db`
+  - `cmd2 > mongo`
+  - `cmd3 > mongorestore /drop /db:myFlightsDB <parent_path>/myFlightsDB`
+    - parent_path means the parent path of folder myFlightsDB where stored
+      the dumped files(.bson, .metadata).
 
 - more info:
 ```

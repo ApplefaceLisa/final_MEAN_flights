@@ -1,0 +1,1 @@
+each json file content is a document for flightDetails collection

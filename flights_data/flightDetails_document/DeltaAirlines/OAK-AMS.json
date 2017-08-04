@@ -1,0 +1,115 @@
+{
+  "carrier" : "DeltaAirlines",
+  "route" : "OAK-AMS",
+  "details" :
+  [{
+    "ident": "KAL24",
+    "timestamp": "1434510484",
+    "longitude": "169.53334",
+    "latitude": "52.88334",
+    "groundspeed": "550",
+    "altitude": "340",
+    "updateType": "TZ",
+    "heading": "239",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "AAL1393",
+    "timestamp": "1434510765",
+    "longitude": "-110.88454",
+    "latitude": "37.54678",
+    "groundspeed": "435",
+    "altitude": "360",
+    "updateType": "TA",
+    "heading": "285",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "VRD936",
+    "timestamp": "1434510795",
+    "longitude": "-118.21659",
+    "latitude": "34.03519",
+    "groundspeed": "206",
+    "altitude": "31",
+    "updateType": "TA",
+    "heading": "83",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "UAL724",
+    "timestamp": "1434510798",
+    "longitude": "-124.25580",
+    "latitude": "36.59890",
+    "groundspeed": "490",
+    "altitude": "301",
+    "updateType": "TA",
+    "heading": "59",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "ANA7",
+    "timestamp": "1434510780",
+    "longitude": "152.44978",
+    "latitude": "44.71220",
+    "groundspeed": "480",
+    "altitude": "350",
+    "updateType": "TP",
+    "heading": "228",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "DAL241",
+    "timestamp": "1434510765",
+    "longitude": "-111.43053",
+    "latitude": "38.04172",
+    "groundspeed": "446",
+    "altitude": "340",
+    "updateType": "TA",
+    "heading": "276",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "AAR211",
+    "timestamp": "1434510780",
+    "longitude": "156.36157",
+    "latitude": "47.08664",
+    "groundspeed": "480",
+    "altitude": "370",
+    "updateType": "TP",
+    "heading": "231",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "DAL952",
+    "timestamp": "1434510457",
+    "longitude": "-108.91695",
+    "latitude": "42.44222",
+    "groundspeed": "496",
+    "altitude": "350",
+    "updateType": "TZ",
+    "heading": "73",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "SKW6338",
+    "timestamp": "1434510472",
+    "longitude": "-118.89972",
+    "latitude": "33.91722",
+    "groundspeed": "367",
+    "altitude": "283",
+    "updateType": "TZ",
+    "heading": "310",
+    "arrivalTime": "0"
+  },
+  {
+    "ident": "UAL331",
+    "timestamp": "1434510482",
+    "longitude": "-114.27333",
+    "latitude": "38.57000",
+    "groundspeed": "498",
+    "altitude": "350",
+    "updateType": "TZ",
+    "heading": "89",
+    "arrivalTime": "0"
+  }]
+}

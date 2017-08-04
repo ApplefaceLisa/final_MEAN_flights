@@ -51,20 +51,3 @@ mongodump /db:myFlightsDB /out:db_dumped
 mongodump --help
 mongorestore --help
 ```
-
-
-# Deployment : Heroku and mlab
-#### [MEAN Stack App Part 20: Deploy App Using Heroku](https://www.youtube.com/watch?v=IhU6x94eTXU)
-#### [MongoDB for your Heroku NodeJS app](https://www.youtube.com/watch?v=GDqtv1eGGpA&t=13s)
-#### [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app)
-
-- heroku login
-- git config --global user.name "ApplefaceLisa"
-- git config --global user.email applefacelisa@gmail.com
-- git add .
-- git commit -m "first commit"
-- git push -u origin master
-- heroku create
-- git push heroku master
-- heroku open
-- heroku logs

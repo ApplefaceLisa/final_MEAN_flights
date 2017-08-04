@@ -51,3 +51,6 @@ mongodump /db:myFlightsDB /out:db_dumped
 mongodump --help
 mongorestore --help
 ```
+
+#### [MEAN Stack App Part 20: Deploy App Using Heroku](https://www.youtube.com/watch?v=IhU6x94eTXU)
+#### [MongoDB for your Heroku NodeJS app](https://www.youtube.com/watch?v=GDqtv1eGGpA&t=13s)

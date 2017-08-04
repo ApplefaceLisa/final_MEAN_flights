@@ -25,6 +25,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 mongoose.connect("mongodb://localhost/myFlightsDB");
+// mongoose.connect("mongodb://flight:flight@ds111851.mlab.com:11851/myflights_db");
 
 app.get('/flights/carriers', function(req, res, next) {
     carriers.find(function(err, data) {
